@@ -14,6 +14,10 @@ Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 
+import GreetingGlobalComponent from './components/Greeting'
+Vue.component('GreetingGlobalComponent', GreetingGlobalComponent);
+
+
 new Vue({
   router,
   store,

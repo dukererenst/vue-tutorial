@@ -7,6 +7,9 @@ Vue.use(VueRouter);
 import aboutView from '../views/About';
 import vmodelView from '../views/basics/Vmodel';
 import conditionsView from '../views/basics/Conditions';
+import listingView from '../views/basics/Listing';
+import computedAndWatchersView from '../views/basics/ComputedAndWatchers';
+import componentRegistrationView from '../views/basics/ComponentRegistration';
 
 const routes = [
   {
@@ -31,6 +34,21 @@ const routes = [
     path: '/basics/conditions',
     name: 'Conditions',
     component: conditionsView
+  },
+  {
+    path: '/basics/listing',
+    name: 'Listing',
+    component: listingView
+  },
+  {
+    path: '/basics/computedAndWatchers',
+    name: 'ComputedAndWatchers',
+    component: computedAndWatchersView
+  },
+  {
+    path: '/basics/componentRegistration',
+    name: 'ComponentRegistration',
+    component: componentRegistrationView
   }
 ]
 

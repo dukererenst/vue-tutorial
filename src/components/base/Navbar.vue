@@ -14,16 +14,23 @@
           </b-dropdown-item>
           <b-dropdown-item @click="$router.push({ name: 'Conditions' })"> Conditions
           </b-dropdown-item>
-          <b-dropdown-item href="#">Conditions</b-dropdown-item>
-          <b-dropdown-item href="#">Enumarate</b-dropdown-item>
-          <b-dropdown-item href="#">Component Registration</b-dropdown-item>
+          <b-dropdown-item @click="$router.push({ name: 'Listing' })"> Listing
+          </b-dropdown-item>
+          <b-dropdown-item @click="$router.push({ name: 'ComputedAndWatchers' })"> Computed & Watchers
+          </b-dropdown-item>
+          <b-dropdown-item @click="$router.push({ name: 'ComponentRegistration' })"> Component Registration
+          </b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
       <b-navbar-nav>
-        <b-nav-item-dropdown text="Basics" right>
-          <b-dropdown-item href="#">v-model</b-dropdown-item>
-          <b-dropdown-item href="#">If</b-dropdown-item>
-          <b-dropdown-item href="#">For</b-dropdown-item>
+        <b-nav-item-dropdown text="Advance" right>
+          <b-dropdown-item href="#">lifecycles</b-dropdown-item>
+          <b-dropdown-item href="#">Component communications</b-dropdown-item>
+          <b-dropdown-item href="#">Slots</b-dropdown-item>
+          <b-dropdown-item href="#">Vue-router</b-dropdown-item>
+          <b-dropdown-item href="#">Vuex</b-dropdown-item>
+          <b-dropdown-item href="#">Mixins</b-dropdown-item>
+          <b-dropdown-item href="#">Using V-model And Advanced component (Re-usable)</b-dropdown-item>
           <b-dropdown-item href="#">Component Registration</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
