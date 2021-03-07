@@ -11,6 +11,9 @@ import listingView from '../views/basics/Listing';
 import computedAndWatchersView from '../views/basics/ComputedAndWatchers';
 import componentRegistrationView from '../views/basics/ComponentRegistration';
 
+import lifecyclesView from '../views/advanced/Lifecycles';
+
+
 const routes = [
   {
     path: '/',
@@ -41,14 +44,19 @@ const routes = [
     component: listingView
   },
   {
-    path: '/basics/computedAndWatchers',
+    path: '/basics/computed-and-watchers',
     name: 'ComputedAndWatchers',
     component: computedAndWatchersView
   },
   {
-    path: '/basics/componentRegistration',
+    path: '/basics/component-registration',
     name: 'ComponentRegistration',
     component: componentRegistrationView
+  },
+  {
+    path: '/advanced/lifecycles',
+    name: 'lifecycles',
+    component: lifecyclesView
   }
 ]
 

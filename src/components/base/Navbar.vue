@@ -9,7 +9,7 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item-dropdown text="Basics" right>
+        <b-nav-item-dropdown text="Basics" left>
           <b-dropdown-item @click="$router.push({ name: 'Vmodel' })"> V-model
           </b-dropdown-item>
           <b-dropdown-item @click="$router.push({ name: 'Conditions' })"> Conditions
@@ -23,8 +23,8 @@
         </b-nav-item-dropdown>
       </b-navbar-nav>
       <b-navbar-nav>
-        <b-nav-item-dropdown text="Advance" right>
-          <b-dropdown-item href="#">lifecycles</b-dropdown-item>
+        <b-nav-item-dropdown text="Advance" left>
+          <b-dropdown-item @click="$router.push({ name: 'lifecycles' })">Lifecycles</b-dropdown-item>
           <b-dropdown-item href="#">Component communications</b-dropdown-item>
           <b-dropdown-item href="#">Slots</b-dropdown-item>
           <b-dropdown-item href="#">Vue-router</b-dropdown-item>
