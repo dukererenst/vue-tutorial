@@ -12,6 +12,7 @@
 <script>
 
 import Navbar from './components/base/Navbar';
+
 export default {
   name: 'App',
   components: {

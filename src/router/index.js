@@ -12,6 +12,7 @@ import computedAndWatchersView from '../views/basics/ComputedAndWatchers';
 import componentRegistrationView from '../views/basics/ComponentRegistration';
 
 import lifecyclesView from '../views/advanced/Lifecycles';
+import slotView from '../views/advanced/Slot';
 
 
 const routes = [
@@ -57,6 +58,11 @@ const routes = [
     path: '/advanced/lifecycles',
     name: 'lifecycles',
     component: lifecyclesView
+  },
+  {
+    path: '/advanced/slot',
+    name: 'slot',
+    component: slotView
   }
 ]
 
