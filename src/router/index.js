@@ -13,7 +13,7 @@ import componentRegistrationView from '../views/basics/ComponentRegistration';
 
 import lifecyclesView from '../views/advanced/Lifecycles';
 import slotView from '../views/advanced/Slot';
-
+import mixinsView from '../views/advanced/Mixins';
 
 const routes = [
   {
@@ -24,9 +24,6 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: aboutView
   },
   {
@@ -63,6 +60,11 @@ const routes = [
     path: '/advanced/slot',
     name: 'slot',
     component: slotView
+  },
+  {
+    path: '/advanced/mixins',
+    name: 'mixins',
+    component: mixinsView
   }
 ]
 

@@ -21,6 +21,7 @@ Vue.component('GreetingGlobalComponent', GreetingGlobalComponent);
 import SlotExample from './components/SlotExample';
 Vue.component('SlotExample', SlotExample);
 
+
 new Vue({
   router,
   store,
