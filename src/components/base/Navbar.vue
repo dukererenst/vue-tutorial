@@ -25,7 +25,7 @@
       <b-navbar-nav>
         <b-nav-item-dropdown text="Advance" left>
           <b-dropdown-item @click="$router.push({ name: 'lifecycles' })">Lifecycles</b-dropdown-item>
-          <b-dropdown-item href="#">Component communications</b-dropdown-item>
+          <b-dropdown-item  @click="$router.push({ name: 'communication' })">Component communications</b-dropdown-item>
           <b-dropdown-item @click="$router.push({ name: 'slot' })">Slots</b-dropdown-item>
           <b-dropdown-item @click="$router.push({ name: 'mixins' })">Mixins</b-dropdown-item>
           <b-dropdown-item href="#">Vue-router</b-dropdown-item>
