@@ -21,6 +21,10 @@ Vue.component('GreetingGlobalComponent', GreetingGlobalComponent);
 import SlotExample from './components/SlotExample';
 Vue.component('SlotExample', SlotExample);
 
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+Vue.use(VueAxios, axios)
 
 new Vue({
   router,
