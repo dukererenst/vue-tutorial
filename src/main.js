@@ -17,7 +17,6 @@ Vue.use(IconsPlugin)
 import GreetingGlobalComponent from './components/Greeting'
 Vue.component('GreetingGlobalComponent', GreetingGlobalComponent);
 
-
 import SlotExample from './components/SlotExample';
 Vue.component('SlotExample', SlotExample);
 

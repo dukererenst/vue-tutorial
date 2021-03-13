@@ -74,12 +74,10 @@ const routes = [
   }
 ]
 
-
-
-// router.beforeEach((to, from, next) => {
-//   if (to.name !== 'Login' && !isAuthenticated) next({ name: 'Login' })
-//   else next()
-// })
+const originalPush = VueRouter.prototype.push;
+VueRouter.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
 
 const router = new VueRouter({
   mode: 'history',
