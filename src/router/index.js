@@ -15,6 +15,7 @@ import lifecyclesView from '../views/advanced/Lifecycles';
 import communicationView from '../views/advanced/Communication';
 import slotView from '../views/advanced/Slot';
 import mixinsView from '../views/advanced/Mixins';
+import vuexView from '../views/advanced/Vuex';
 
 const routes = [
   {
@@ -71,6 +72,11 @@ const routes = [
     path: '/advanced/mixins',
     name: 'mixins',
     component: mixinsView
+  },
+  {
+    path: '/advanced/vuex',
+    name: 'vuex',
+    component: vuexView
   }
 ]
 
