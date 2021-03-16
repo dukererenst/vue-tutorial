@@ -18,7 +18,7 @@
     >
     </todo-item>
 
-    <div class="extra-container" style="padding-top: 62px">
+    <div style="padding-top: 62px">
       <div>
         <label
           ><input
