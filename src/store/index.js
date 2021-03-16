@@ -5,7 +5,6 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    filter: 'all',
     todos: [],
   },
   getters: {
@@ -16,14 +15,7 @@ export default new Vuex.Store({
       return getters.remaining != 0
     },
     todosFiltered(state) {
-      if (state.filter == 'all') {
-        return state.todos
-      } else if (state.filter == 'active') {
-        return state.todos.filter(todo => !todo.completed)
-      } else if (state.filter == 'completed') {
-        return state.todos.filter(todo => todo.completed)
-      }
-      return state.todos
+      return state.todos;
     },
     showClearCompletedButton(state) {
       return state.todos.filter(todo => todo.completed).length > 0
@@ -41,10 +33,10 @@ export default new Vuex.Store({
     updateTodo(state, todo) {
       const index = state.todos.findIndex(item => item.id == todo.id)
       state.todos.splice(index, 1, {
-        'id': todo.id,
-        'title': todo.title,
-        'completed': todo.completed,
-        'editing': todo.editing,
+        id: todo.id,
+        title: todo.title,
+        completed: todo.completed,
+        editing: todo.editing,
       })
     },
     deleteTodo(state, id) {
@@ -93,10 +85,6 @@ export default new Vuex.Store({
       context.commit('updateFilter', filter)
     },
     clearCompleted(context) {
-      // const completed = context.state.todos
-      //   .filter(todo => todo.completed)
-      //   .map(todo => todo.id)
-
         context.commit('clearCompleted');
     }
   }
