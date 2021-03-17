@@ -25,11 +25,11 @@
       ></b-form-input>
     </b-form-group>
 
-    <b-form-group  v-if="!hideFood" id="input-group-3" label="Food:" label-for="input-3">
+    <b-form-group  v-if="!hideGender" id="input-group-3" label="Gender:" label-for="input-3">
       <b-form-select
         id="input-3"
-        v-model="form.food"
-        :options="foods"
+        v-model="form.gender"
+        :options="genders"
         required
       ></b-form-select>
     </b-form-group>
@@ -40,20 +40,20 @@
         id="checkboxes-4"
         :aria-describedby="ariaDescribedby"
       >
-        <b-form-checkbox value="me">Check me out</b-form-checkbox>
-        <b-form-checkbox value="that">Check that out</b-form-checkbox>
+        <b-form-checkbox >Check me out</b-form-checkbox>
+        <b-form-checkbox >Check that out</b-form-checkbox>
       </b-form-checkbox-group>
     </b-form-group>
 
     <b-button type="submit" variant="primary">Submit</b-button>
-    <b-button type="reset" variant="danger">Reset</b-button>
+    <b-button type="reset" variant="danger" style="margin-left: 10px;">Reset</b-button>
   </b-form>
 </template>
 
 <script>
 export default {
   props: {
-      hideFood: {
+      hideGender: {
           type: Boolean,
           default: false
       }
@@ -63,15 +63,14 @@ export default {
       form: {
         email: "",
         name: "",
-        food: null,
+        gender: null,
         checked: [],
       },
-      foods: [
+      genders: [
         { text: "Select One", value: null },
-        "Carrots",
-        "Beans",
-        "Tomatoes",
-        "Corn",
+        "Man",
+        "Woman",
+        "Other"
       ],
       show: true,
     };

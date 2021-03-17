@@ -3,13 +3,13 @@
     <b-container class="bv-example-row" style="padding-top: 2%">
       <b-row style="padding-bottom: 6%;">
         <b-col>
-          <b-form-checkbox v-model="hideFoodSection" name="check-button" switch>
-            Hide Food Section          </b-form-checkbox>
+          <b-form-checkbox v-model="hideGenderSection" name="check-button" switch>
+            Hide Gender Section          </b-form-checkbox>
         </b-col>
       </b-row>
       <b-row>
         <b-col>
-          <sign-up :hide-food="hideFoodSection" @submit="onSubmit" />
+          <sign-up :hide-gender="hideGenderSection" @submit="onSubmit" />
         </b-col>
       </b-row>
       <b-row style="padding-top: 2%">
@@ -28,7 +28,7 @@ export default {
   },
   data() {
     return {
-      hideFoodSection: false,
+      hideGenderSection: false,
     };
   },
 
