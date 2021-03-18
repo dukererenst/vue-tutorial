@@ -2,43 +2,19 @@
   <div style="padding: 4%">
     <b-container class="bv-example-row" style="padding-top: 2%">
       <b-row>
-        <b-col>
-          beforeCreate
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col>
-          created
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col>
-          beforeMount
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col>
-          mounted
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col>
-          beforeDestroy
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col>
-          destroyed
-        </b-col>
+          <p><b-img :src="lifecycleImage" fluid></b-img></p>
       </b-row>
     </b-container>
   </div>
 </template>
 
 <script>
+import lifecycleImage from "../../assets/lifecycle.png"
+
 export default {
   data() {
     return {
+      lifecycleImage,
       message: ''
     }
   },
